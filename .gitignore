@@ -1,0 +1,7 @@
+render\ server/build
+render\ server/node_modules
+render\ server/public/bundle.js
+render\ server/public/styles.css
+api\ server/build
+api\ server/node_modules
+api\ server/src/configuration

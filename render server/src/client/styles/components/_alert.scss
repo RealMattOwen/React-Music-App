@@ -1,0 +1,16 @@
+.alert {
+	border-radius: .4rem;
+	margin: 0 auto;
+	padding: .8rem 1.5rem;
+	width: 80%;
+}
+
+.error-alert {
+	background-color: #fff1f0;
+	border: 1px solid #ffa39e;
+}
+
+.success-alert {
+	background-color: #f6ffed;
+	border: .1rem solid #b7eb8f;
+}

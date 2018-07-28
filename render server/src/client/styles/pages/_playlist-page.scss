@@ -1,0 +1,32 @@
+.playlist-page {
+	overflow: hidden;
+
+	.playlist-title {
+		margin: 1rem 0;
+		text-align: center;
+	}
+
+	.columns {
+		border-top: .1rem solid $header-border;
+	}
+
+	.no-playlist {
+		align-items: center;
+		display: flex;
+		font-size: 1.6rem;
+		height: calc(100% - 14.9rem);
+		justify-content: center;
+	}
+
+	.songs {
+		.song-list {
+			.song-list-scrollbar {
+				height: calc(100% - 14.9rem) !important;
+
+				&.with-playbar {
+					height: calc(100% - 26rem) !important;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+.playlists {
+	.heading {
+		border-bottom: .1rem solid #DCDCDC;
+		display: flex;
+		justify-content: center;
+		position: relative;
+
+		.heading-title {
+			height: 4rem;
+			line-height: 4rem;
+			margin: 0;
+		}
+
+		.new-playlist-btn {
+			position: absolute;
+			right: 0;
+		}
+	}
+
+	.no-playlists, .not-logged-in {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		font-size: 2rem;
+		height: calc(100% - 10.5rem);
+		justify-content: center;
+		padding: 0 2rem;
+		text-align: center;
+	}
+
+	.no-playlists p span {
+		display: inline-block;
+	}
+
+	.not-logged-in p a {
+		text-decoration: underline;
+	}
+
+	.new-playlist-btn {
+		align-items: center;
+		cursor: pointer;
+		display: flex;
+		font-size: 1.8rem;
+		height: 4rem;
+		justify-content: center;
+		width: 6.4rem;
+	}
+}

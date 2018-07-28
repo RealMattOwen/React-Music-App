@@ -1,0 +1,101 @@
+.header {
+	background-color: #8a2be2;
+	border-bottom: .1rem solid $header-border;
+	height: 6.4rem;
+	text-align: center;
+
+	.app-name, .menu-btn {
+		color: $dominant;
+		display: inline-block;
+		line-height: 6.4rem;
+	}
+
+	.app-name {
+		margin: 0;
+	}
+
+	.menu-btn {
+		background: none;
+		border: none;
+		cursor: pointer;
+		font-size: 1.6rem;
+		padding: 0;
+		position: absolute;
+		right: 0;
+		text-transform: uppercase;
+		vertical-align: top;
+		width: 6.4rem;
+	}
+}
+
+.menu {
+	list-style-type: none;
+	margin: 0;
+	max-height: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	text-align: center;
+	transition: max-height .5s ease;
+	width: 100%;
+	z-index: 1;
+
+	&.open {
+		max-height: 12rem;
+
+		&.logout {
+			max-height: 20rem;
+		}
+	}
+
+	.menu-item {
+		background-color: #DCDCDC;
+		height: 4rem;
+		line-height: 4rem;
+
+		.logout-btn {
+			background: none;
+			border: none;
+			cursor: pointer;
+		}
+	}
+}
+
+.background {
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+
+	.confirm-logout {
+		background-color: #DCDCDC;
+		left: 50%;
+		max-width: 26rem;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		z-index: 2;
+
+		.button-container {
+			display: flex;
+			justify-content: space-evenly;
+
+			.action-btn {
+				background-color: transparent;
+				border: .1rem solid #000;
+				cursor: pointer;
+				display: block;
+				margin: 0 auto 1.6rem;
+				padding: 1rem 2rem;
+
+				&:first-of-type {
+					background-color: deepskyblue;
+				}
+			}
+		}
+	}
+}

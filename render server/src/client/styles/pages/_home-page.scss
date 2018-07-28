@@ -1,0 +1,41 @@
+.home-container {
+	display: flex;
+
+	.playlists {
+		border-right: .1rem solid $header-border;
+		display: none;
+		flex: 1;
+
+		.playlist-list-scrollbar {
+			height: calc(100% - 10.5rem) !important;
+
+			&.with-playbar {
+				height: calc(100% - 21.6rem) !important;
+			}
+		}
+
+		@include breakpoint(lg) {
+			display: block;
+		}
+	}
+
+	.no-playlist {
+		align-items: center;
+		display: flex;
+		font-size: 1.6rem;
+		height: calc(100% - 10.5rem);
+		justify-content: center;
+	}
+
+	.songs {
+		.song-list {
+			.song-list-scrollbar {
+				height: calc(100% - 10.5rem) !important;
+
+				&.with-playbar {
+					height: calc(100% - 21.6rem) !important;
+				}
+			}
+		}
+	}
+}

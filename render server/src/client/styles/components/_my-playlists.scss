@@ -1,0 +1,36 @@
+.playlists {
+	.playlist {
+		border-bottom: .1rem solid $header-border;
+		display: block;
+		height: 6rem;
+		line-height: 2rem;
+		padding: 1rem 0;
+		position: relative;
+		text-align: center;
+
+		&:active, &:hover {
+			background-color: $header-border;
+		}
+
+		.playlist-name {
+			margin: 0;
+		}
+
+		.playlist-song-count {
+			margin: 0;
+		}
+
+		.playlist-options-btn {
+			background: none;
+			border: none;
+			cursor: pointer;
+			font-size: 1.8rem;
+			height: 6rem;
+			padding: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 6.4rem;
+		}
+	}
+}

@@ -1,0 +1,66 @@
+.songs {
+	text-align: center;
+
+	.columns {
+		border-bottom: .1rem solid $header-border;
+		display: flex;
+
+		.song-titles, .song-artists {
+			flex: 1;
+			height: 4rem;
+			line-height: 4rem;
+			margin: 0;
+		}
+	}
+
+	.song-list {
+		.song {
+			align-items: center;
+			border-bottom: .1rem solid $header-border;
+			display: flex;
+			height: 6rem;
+			padding: 0 1.6rem;
+
+			&:active, &:hover {
+				background-color: $header-border;
+			}
+
+			.song-title, .song-artists {
+				flex: 1;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+
+			.song-artists {
+				.song-artist {
+					display: block;
+
+					@include breakpoint(sm) {
+						display: inline;
+					}
+
+					&:after {
+						content: ", "
+					}
+
+					&:last-child:after {
+						content: "";
+					}
+				}
+			}
+
+			.action-btn {
+				background: none;
+				border: none;
+				cursor: pointer;
+				font-size: 1.8rem;
+				height: 6rem;
+				padding: 0;
+				position: absolute;
+				right: 0;
+				width: 6.4rem;
+			}
+		}
+	}
+}
